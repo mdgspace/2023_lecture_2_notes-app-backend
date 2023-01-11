@@ -23,9 +23,9 @@ class UserNoteView(APIView):
             return JsonResponse(serializer.data, status=201)
         return JsonResponse(serializer.errors, status=400)
 
-    def put(self, request, id, format=None):
+    def patch(self, request, id, format=None):
         note = Note.objects.get(id=id)
-        serializer = NoteSerializer(note, data=request.data)
+        serializer = NoteSerializer(note, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
