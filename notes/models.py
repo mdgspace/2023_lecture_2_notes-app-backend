@@ -11,6 +11,8 @@ class Note(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     isPin = models.BooleanField(default=False)
     id = models.AutoField(primary_key=True)
+    primary = models.CharField(max_length=20, null=True)
+    secondary = models.CharField(max_length=20, null=True)
 
     def publish(self):
         self.save()
