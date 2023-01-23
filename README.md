@@ -22,31 +22,31 @@ samples, guidance on django web framework
 
 1. Download the project
 
-- Clone the repo using `git clone https://github.com/photon0205/notes-app-backend.git`
+  - Clone the repo using `git clone https://github.com/photon0205/notes-app-backend.git`
 
 ---
 
 2. Creating Virtual Environment
 
-- Open the clone folder in VS Code
+  - Open the clone folder in VS Code
 
-  - Virtual environment: Windows
+    - Virtual environment: Windows
 
-    - To create a new `virtualenv`, you need to open the terminal and run `python -m venv myvenv`.
-    - Start your virtual environment by running: `myvenv\Scripts\activate`
+      - To create a new `virtualenv`, you need to open the terminal and run `python -m venv myvenv`.
+      - Start your virtual environment by running: `myvenv\Scripts\activate`
   
 
-  - Virtual environment: Linux and OS X
+    - Virtual environment: Linux and OS X
 
-    - We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv` on the terminal.
-    - Start your virtual environment by running: `source myvenv/bin/activate`
+      - We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv` on the terminal.
+      - Start your virtual environment by running: `source myvenv/bin/activate`
 
 ---
 
 3.  Downloading packages
 
-- Run `pip install -r requirements.txt` in the terminal to install all the packages mentioned in requirements.txt
-- After installation is completed run `python manage.py runserver` to start the server at [http://localhost:8000](http://localhost:8000)
+  - Run `pip install -r requirements.txt` in the terminal to install all the packages mentioned in requirements.txt
+  - After installation is completed run `python manage.py runserver` to start the server at [http://localhost:8000](http://localhost:8000)
 
 ---
 
